@@ -58,21 +58,17 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/rqsturmovie')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/movies_areaz')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/mybotsupport')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/martinbot12')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/martinbot12')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'mybotsupport')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name} 
- ╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗ 
- ▫️<a href=https://t.me/movies_areaz> ᴍᴀɪɴ ɢʀᴏᴜᴘ </a> 
- ▫️<a href=https://t.me/rqsturmovie> ʀᴇǫᴜᴇsᴛ ᴍᴏᴠɪᴇs </a> 
- ╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝</b>")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
